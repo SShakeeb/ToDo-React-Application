@@ -25,7 +25,6 @@ router.get('/', function(req, res){
 // An endpoint to update status based on ID
 router.patch('/:id', (req, res) => {
     // First to read todo.json file
-    console.log(process.cwd())
     readJson(FILEPATH, (err, todo) => {
         if (err){
             console.log(err)
