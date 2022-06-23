@@ -33,7 +33,8 @@ router.patch('/:id', (req, res) => {
         try {
             //Find index of specific object using findIndex method.
             const objIndex = findJsonById(todo, req);
-            if (objIndex){
+            // If the index is -1 then return an error to client
+            if (objIndex<0){
                 return res.status(404).send("Todo not found");
             }
             //Update object's status property.

@@ -8,10 +8,10 @@ export async function getTodo() {
         const { data } = await axios.get<TodoApiData>(
             TODO_LIST_EP
         );
-        return data || [];
+        return data || [];
     } catch (error) {
         throw new Error(
-            `Error in 'axiosGetJsonData(${BASE_URL})':`
+            `Error in 'axiosGetJsonData(${BASE_URL})':${error}`
             );
     }
 }
@@ -31,7 +31,7 @@ export async function updateTodo(todo: Todo) {
         return data || {};
     } catch (error) {
         throw new Error(
-            `Error in 'axiosUpdateJsonData(${Path})':`
+            `Error in 'axiosUpdateJsonData(${Path})':${error}`
         )
     }
 }
