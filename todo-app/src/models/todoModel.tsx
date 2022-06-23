@@ -8,7 +8,7 @@ export async function getTodo() {
         const { data } = await axios.get<TodoApiData>(
             TODO_LIST_EP
         );
-        return data;
+        return data || [];
     } catch (error) {
         throw new Error(
             `Error in 'axiosGetJsonData(${BASE_URL})':${error}`
