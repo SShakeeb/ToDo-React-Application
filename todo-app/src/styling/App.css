@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+/* Custom styles for table */
+th,
+td {
+  border: 2px solid black;
+  margin: 0px 0px;
+  padding: 20px 30px;
+}

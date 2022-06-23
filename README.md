@@ -3,8 +3,10 @@ This application uses JSON file to store List of Todo objects. It fetch all avai
 # How to run app locally
 ToDo-React-Application runs server and app concurrently
 To run this app Please follow steps mentioned below:
-1. npm install
-2. npm run dev
+1. cd to app folder named as **todo-app**
+2. npm install
+3. **npm run dev**
+
 On successful run you will see a message in terminal saying _concurrently "npm start" "npm run server"_
 # Available Scripts
 In the project directory, you can run:
